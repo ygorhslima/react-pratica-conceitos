@@ -1,0 +1,98 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --color1: #3587A4;
+    --color2: #C1DFF0;
+    --color3: #2D848A;
+    --color4: #0B3948;
+    --color5: #416165;
+    --font-default: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body{
+    /* Gradiente mais suave e centralização total */
+    background: radial-gradient(circle at top left, var(--color5), var(--color4));
+    font-family: var(--font-default);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 450px;
+    padding: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.05); /* Efeito de vidro */
+    backdrop-filter: blur(5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+legend{
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0 10px;
+    letter-spacing: 1px;
+}
+
+input{
+    outline: none;
+    margin: 10px 0;
+    padding: 12px 15px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease;
+}
+
+/* Efeito ao clicar no campo */
+input:focus {
+    border-color: var(--color1);
+    box-shadow: 0 0 4px var(--color1);
+}
+
+button {
+    background-color: var(--color2);
+    color: var(--color4);
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 12px;
+    margin-top: 25px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    background-color: white;
+    transform: translateY(-2px); /* Efeito de levante */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+div.result{
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    margin: 10px;
+    background-color: var(--color3);
+    color: white;
+    border-radius: 20px;
+
+}
